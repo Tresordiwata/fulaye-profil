@@ -1,5 +1,5 @@
 // export const BACKEND = "http://localhost/root/backend-fulaye/";
-export const BACKEND = "https://api.fulaye/fulaye/";
+export const BACKEND = "https://api.fulaye.com/fulaye/";
 export const API = BACKEND + "api.php";
 export const getData = async (qry, id = null) => {
 

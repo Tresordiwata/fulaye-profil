@@ -28,7 +28,7 @@ export const postData = async (qry, data, id = null) => {
 }
 export const Btn = ({ text, color, bg,href }) => {
     return (
-        <div className={`${bg || 'bg-blue-600 '} rounded-md min-w-44 w-80 px-9`} style={{minWidth:"170px"}}>
+        <div style={{backgroundColor:bg || '#2563eb', padding:"5px 5px",minWidth:"170px"}} className={`${bg || 'bg-blue-600 '} rounded-md min-w-44 w-80 px-9 py-2`} >
             <a className={` min-w-80 py-2 w-80 text-white rounded-md items-center justify-center flex px-9`} href={href || "#"}>
                 {text}
             </a>

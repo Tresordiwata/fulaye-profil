@@ -60,7 +60,7 @@ export default function Home({ params }) {
                             <img src={logowhatspp} className="w-6 h-6 rounded-md" /> WhatsApp
                         </div>} 
                     bg={"bg-green-500"} 
-                    href={profil?.whatsapp?`https://wa.me/${profil?.whatsapp}`:"#dd"+profil?.whatsapp}
+                    href={profil?.whatsapp?`https://wa.me/${profil?.whatsapp}`:"#"+profil?.whatsapp}
                     />
                     {/* <a href="">Quitter</a> */}
                 </div>
@@ -88,7 +88,7 @@ export default function Home({ params }) {
                     Pour voir tous mes produits, services et demandes de disponibilité, veuillez télécharger notre application <span className="text-green-500 font-bold">pour gagner de l'argent  à chaque scan</span>
 
                 </p>
-                <Btn text={<div className="flex gap-3"><Download /> Télecharger application</div>} />
+                <Btn  bg={"bg-blue-600"}  text={<div className="flex gap-3"><Download /> Télecharger application</div>} />
             </div>
 
         </div>

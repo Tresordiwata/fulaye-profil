@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Lien from "next/link";
+import ModalPub from "../pub/ModalPub";
 
 
 export default function PageClient({ pa }) {
@@ -52,6 +53,7 @@ export default function PageClient({ pa }) {
 
     return (
         <div className="min-h-screen bg-gray-200">
+            <ModalPub />
             <div className="text-center border-b-4 border-green-400  w-full text-2xl h-56 to-green-800 via-green-400 from-white bg-gradient-to-r">
                 <p className="text-white text-4xl h-full" style={{ backgroundImage: `url(${fulaye})`, backgroundSize: "100%" }}>
 
@@ -190,8 +192,6 @@ export default function PageClient({ pa }) {
 
                 </>
             }
-
-
             <div className="mt-3 min-h-28 bg-white px-10 flex flex-col gap-4 pt-7 pb-4">
                 {
                     founded == "Y" &&
